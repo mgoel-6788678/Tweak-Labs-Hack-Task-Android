@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/baseline_lock_24.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/baseline_phone_24.xml" value="0.169" />
         <entry key="app/src/main/res/drawable/user_icon.xml" value="0.188" />
-        <entry key="app/src/main/res/layout/activity_athlete.xml" value="0.19655797101449277" />
+        <entry key="app/src/main/res/layout/activity_athlete.xml" value="0.26054112531136775" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23092041015625" />
       </map>
     </option>

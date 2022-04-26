@@ -5,49 +5,119 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AthleteActivity">
+    <ImageView
+        android:id="@+id/user_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/orange1"
+        android:contentDescription="@string/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/user_icon"
         android:layout_width="117dp"
         android:layout_height="109dp"
+        android:background="@color/orange1"
         android:contentDescription="@string/userIcon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_account_circle_black_48"
-        tools:ignore="ImageContrastCheck"
-        android:background="@color/orange1"/>
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/AthleteName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
         android:text="@string/athleteName"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_icon"
-        android:fontFamily="@font/open_sans" />
+        app:layout_constraintTop_toBottomOf="@+id/user_icon" />
 
     <TextView
         android:id="@+id/AthleteSport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
         android:text="@string/athleteSport"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AthleteName"
-        android:fontFamily="@font/open_sans" />
+        app:layout_constraintTop_toBottomOf="@+id/AthleteName" />
+
+    <ImageView
+        android:layout_width="44dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toStartOf="@id/BallsBowled"
+        app:layout_constraintTop_toTopOf="@id/BallsBowled"
+        app:layout_constraintBottom_toBottomOf="@id/BallsBowled"
+        app:srcCompat="@drawable/baseline_sports_volleyball_black_48"
+        tools:layout_editor_absoluteY="157dp"
+        android:contentDescription="@string/ballDescription"/>
+
+    <TextView
+        android:id="@+id/BallsBowled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/balls"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AthleteSport" />
+
+    <ImageView
+        android:layout_width="44dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toStartOf="@id/NumSessions"
+        app:layout_constraintTop_toTopOf="@id/NumSessions"
+        app:layout_constraintBottom_toBottomOf="@id/NumSessions"
+        app:srcCompat="@drawable/baseline_event_note_black_48"
+        tools:layout_editor_absoluteY="157dp"
+        android:contentDescription="@string/sessionDescription"/>
+
+    <TextView
+        android:id="@+id/NumSessions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/numSessions"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AthleteSport" />
+
+    <TextView
+        android:id="@+id/AthleteSessionsHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/AthleteSessionsHeading"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewOne"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/AthleteName"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="60dp">
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BallsBowled">
 
         <TextView
             android:id="@+id/sessionOne"
@@ -61,10 +131,12 @@
     <androidx.cardview.widget.CardView
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/cardViewOne"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="30dp">
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewOne">
 
         <TextView
             android:id="@+id/sessionTwo"
@@ -74,5 +146,12 @@
             android:textAlignment="center"
             android:textSize="20sp" />
     </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="235dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

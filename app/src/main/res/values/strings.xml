@@ -15,4 +15,11 @@
 
     <string name="userIcon">This is the user icon</string>
     <string name="defaultText">TextView</string>
+    <string name="background">Background color</string>
+    <string name="balls">%d\nBalls Bowled</string>
+    <string name="numSessions">%d\nSessions</string>
+    <string name="AthleteSessionsHeading">Athlete Sessions</string>
+    <string name="ballDescription">This is a ball</string>
+    <string name="sessionDescription">This is the number of sessions</string>
+
 </resources>
