@@ -27,7 +27,6 @@
         android:hint="@string/phoneNum"
         android:inputType="textPersonName|phone"
         android:minHeight="48dp"
-        android:text="@string/phoneNum_text"
         android:textColor="@color/orange1"
         android:textColorHighlight="@color/orange_last"
         android:textColorHint="@color/orange1"

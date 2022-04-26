@@ -4,8 +4,7 @@
     <string name="passwordHint">Password</string>
     <string name="signIn_content">Sign in button</string>
     <string name="signIn_text">Sign In</string>
-    <string name="phoneNum">This is the phone number</string>
-    <string name="phoneNum_text">Phone Number</string>
+    <string name="phoneNum">Phone Number</string>
     <string name="forgotPassword">Forgot Password?</string>
 
     <string name="noAccount">Don\'t have an Account?</string>
