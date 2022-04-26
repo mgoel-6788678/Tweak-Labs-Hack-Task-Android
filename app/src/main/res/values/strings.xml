@@ -10,4 +10,9 @@
     <string name="noAccount">Don\'t have an Account?</string>
 
     <string name="signUp_text">Sign Up</string>
+    <string name="athleteName">Athlete Name</string>
+    <string name="athleteSport">Athlete Sport</string>
+
+    <string name="userIcon">This is the user icon</string>
+    <string name="defaultText">TextView</string>
 </resources>

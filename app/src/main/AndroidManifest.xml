@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TweekLabsHackTask">
         <activity
+            android:name=".AthleteActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
